@@ -1,165 +1,157 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>Clarence Mandap</title>
-
-        <style>
-            body{
-                background-image: url("https://github.com/clarmndp/clarmndp.github.io/blob/main/5594033.jpg?raw=true");
-                color: white;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-
-            .flex-container-header {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row; /* Align items horizontally */         
-            }
-            
-            .flex-item.fName {
-                font-size: 75px;
-                text-align: center;
-            }
-
-            .flex-item.lName {
-                font-size: 75px;
-                text-align: center;
-            }
-
-            .flex-item.logo {
-                justify-content: center;
-                align-items: center;
-                max-width:  100%;
-                max-height:  100%;
-                object-fit: cover;
-}
-            
-            .flex-container-featured {
-                display: flex;
-                justify-content: center; /* Center horizontally */
-                align-items: center; /* Center vertically */
-                width:  100%; /* Take full width of the viewport */
-            }
-            
-            .flex-item.img {
-                max-width:  50%;
-                display: flex;
-                object-fit: contain; /* Resizes the image to fit within the container */
-                margin: auto; /* Centers the image horizontally */
-            }
-
-            .flex-container2 {
-                display: flex;
-                border-style: solid;
-                border-width: 5px;
-                border-color: #393e46;
-                flex-direction: row;
-
-            }
-    
-            .flex-item2 {
-                height: 100px;
-                width: 100px;
-                border-style: solid;
-                border-width: 2px;
-                border-color: #393e46;
-            }
-
-            .flex-container3 {
-                display: flex;
-                border-style: solid;
-                border-width: 5px;
-                border-color: #393e46;
-                flex-direction: row;
-            }
-    
-            .flex-item3 {
-                height: 100px;
-                width: 100px;
-                border-style: solid;
-                border-width: 2px;
-                border-color: #393e46;
-            }
-
-            
-            footer {
-                display: flex;
-                justify-content: space-between;
-                padding: 2em;
-                background-color: #333;
-                color: #fff;
-                position: absolute; 
-                bottom: 0; 
-                left: 0;
-                right: 0;
-                z-index: 10;
-            }
-
-        .footer-section {
-        display: flex;
-        flex: 1;
-        padding: 1em;   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarence P. Mandap</title>
+    <style>
+        body {
+            background-image: url("https://github.com/clarmndp/clarmndp.github.io/blob/main/5594033.jpg?raw=true");
+            margin:  0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: oblique, bold;
         }
-
-        </style>
-    </head>
-
-<body>  
-
-    <div class = "flex-container-header">
-        <div class = "flex-item-fName">
-            Clarence
+        .flex-container {
+            color: rgb(233, 154, 36);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height:  100vh; 
+        }
+        .flex-item {
+            padding:  1em;
+        }
+        header,footer {
+            color: white;
+            background-color: black;
+            text-align: center;
+            align-self: center;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            width:  100%;
+            max-width:  1200px; /* Adjust as needed */
+            margin: auto;
+            padding:  1em  0;
+            font-size: 65px;
+        }
+        .featured-photo {
+            width:  100%;
+            height: auto;
+        }
+        .project-row {
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+            object-fit: contain;
+            border-style: solid;
+            border-width: 5px;
+            border-color: purple;
+        }
+        .skills-row {
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+            object-fit: contain;
+            border-style: solid;
+            border-width: 5px;
+            border-color: purple;
+            flex:  1; 
+            margin-right:  1em; 
+        }
+        .content-section {
+            display: flex;
+            justify-content: space-between; 
+            flex-wrap: wrap; 
+        }
+        .autobiography-section {
+            color: rgb(233, 154, 36);
+            flex:  1; 
+            margin-left:  1em; 
+        }
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <span>Clarence</span>
+            <img src="https://github.com/clarmndp/clarmndp.github.io/blob/main/DSC05256.JPG?raw=true" alt="Logo" class="flex-item">
+            <span>Mandap</span>
         </div>
-        <div class = "flex-item-logo">
-            <img src = "https://github.com/clarmndp/clarmndp.github.io/blob/main/DSC05256.JPG?raw=true"/>
+    </header>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Featured Photo -->
+    <div class="flex-container">
+        <img src="https://www.vigattintourism.com/assets/article_main_photos/optimize/1346470998yNwQTwOg.jpg" alt="Featured Photo" class="featured-photo">
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Project -->
+    <div class="project-row">
+        <div class="flex-container">
+            <span> Going UP (Arcade Platform Game) </span>
         </div>
-        <div class = "flex-item-lName">
-            Mandap
+        <div class="flex-container">
+            <span> Diet Problem Solver using Simplex Method </span>
+        </div>
+        <div class="flex-container">
+            <span> Inventory System Management </span>
+        </div>
+        <div class="flex-container">
+            <span> Terminal-based Recipe Book Helper </span>
         </div>
     </div>
 
-    <div class = "flex-container-featured">
-        <div class = "flex-item img">
-            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/University_of_the_Philippines_at_Los_Banos-Gate.jpg/2560px-University_of_the_Philippines_at_Los_Banos-Gate.jpg"/>
+    <div class = "content-section"></div>
+        <div class="skills-row">
+            <div class="flex-container">
+                <span> JavaScript </span>
+            </div>
+            <div class="flex-container">
+                <span> C </span>
+            </div>
+            <div class="flex-container">
+                <span> R </span>
+            </div>
+            <div class="flex-container">
+                <span> Java </span>
+            </div>
+            <div class="autobiography-section">
+                <span> Autobiography </span>
+                <br>
+                <p>Admitted to UPLB in 2022, I am currently a Computer Science student with a passion for internal code and game development.</p>
+            </div>
         </div>
     </div>
 
-    <div class = "flex-container2">
-        <div class = "flex-item1" style = "flex:3;">
-            Going UP (Arcade Platform Game)
-        </div>
-        <div class = "flex-item2" style = "flex:3;">
-            Inventory System
-        </div>
-        <div class = "flex-item2" style = "flex:3;">
-            Diet Selector with Quadratic Interpolation
-        </div>
-        <div class = "flex-item2" style = "flex:3;">
-            project
-        </div>
-    </div>
-
-    <div class = "flex-container3">
-        <div class = "flex-item3" style = "flex:3;">
-            skills
-        </div>
-        <div class = "flex-item3" style = "flex:3;">
-            autobiography
-        </div>
-    </div>
-
+    <!-- Footer -->
     <footer>
-        <div footer = "footer-section" style = "flex:1;">
-            img
-        </div>
-        <div footer="footer-section" style = "flex:3;">
-            <p>University of the Philippines Los Banos</p>
-            Copyright Information
+        <div class="footer-row">
+            <div class="flex-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/12/Unibersidad_ng_Pilipinas_Los_Banos.png">
+            </div>
+            <div class="flex-container">
+                <p>University of the Philippines Los Baños</p>
+                <br>
+                <p>Institute of Computer Science - College of Arts and Sciences</p>
+            </div>
         </div>
     </footer>
-
 </body>
-
 </html>
