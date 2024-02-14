@@ -6,8 +6,8 @@
 
         <style>
             body{
+                background-image: url("https://github.com/clarmndp/clarmndp.github.io/blob/main/5594033.jpg?raw=true");
                 color: white;
-                background-color: black;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
 
@@ -28,7 +28,7 @@
                 text-align: center;
             }
 
-            .flex-item-logo {
+            .flex-item.logo {
                 justify-content: center;
                 align-items: center;
                 max-width:  100%;
@@ -36,18 +36,18 @@
                 object-fit: cover;
 }
             
-            .flex-container1 {
+            .flex-container-featured {
                 display: flex;
-                border-style: solid;
-                border-width: 5px;
-                border-color: #393e46;
-                align-self: center;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                width:  100%; /* Take full width of the viewport */
             }
             
-            .flex-item img {
-                max-width:  100%;
-                max-height:  100%;
-                object-fit: contain;
+            .flex-item.img {
+                max-width:  50%;
+                display: flex;
+                object-fit: contain; /* Resizes the image to fit within the container */
+                margin: auto; /* Centers the image horizontally */
             }
 
             .flex-container2 {
@@ -109,18 +109,18 @@
 <body>  
 
     <div class = "flex-container-header">
-        <div class = "flex-item fName">
+        <div class = "flex-item-fName">
             Clarence
         </div>
         <div class = "flex-item-logo">
             <img src = "https://github.com/clarmndp/clarmndp.github.io/blob/main/DSC05256.JPG?raw=true"/>
         </div>
-        <div class = "flex-item lName">
+        <div class = "flex-item-lName">
             Mandap
         </div>
     </div>
 
-    <div class = "flex-container1">
+    <div class = "flex-container-featured">
         <div class = "flex-item img">
             <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/University_of_the_Philippines_at_Los_Banos-Gate.jpg/2560px-University_of_the_Philippines_at_Los_Banos-Gate.jpg"/>
         </div>
