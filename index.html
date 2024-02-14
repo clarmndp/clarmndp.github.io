@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Personal Portfolio</title>
+        <style>
+
+            body{
+                color: white;
+                background-color: black;
+            }
+
+            .flex-container0 {
+                display: flex;
+                border-style: solid;
+                border-width: 5px;
+                border-color: #393e46;
+                flex-direction: column;
+                align-self: center;
+            }
+    
+            .flex-item0 {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #393e46;
+            }
+            
+            .flex-container1 {
+                display: flex;
+                border-style: solid;
+                border-width: 5px;
+                border-color: #393e46;
+                align-self: center;
+            }
+    
+            .flex-item {
+                align-self: center;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #393e46;
+            }
+
+            .flex-container2 {
+                display: flex;
+                border-style: solid;
+                border-width: 5px;
+                border-color: #393e46;
+                flex-direction: row;
+
+            }
+    
+            .flex-item2 {
+                height: 100px;
+                width: 100px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #393e46;
+            }
+
+            .flex-container3 {
+                display: flex;
+                border-style: solid;
+                border-width: 5px;
+                border-color: #393e46;
+                flex-direction: row;
+            }
+    
+            .flex-item3 {
+                height: 100px;
+                width: 100px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #393e46;
+            }
+
+            
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+            background-color: #333;
+            color: #fff;
+            position: absolute; 
+            bottom: 0; 
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        .footer-section {
+        display: flex;
+        flex: 1;
+        padding: 1em;   
+        }
+
+        </style>
+    </head>
+
+<body>
+    <div class = "flex-container0">
+        logo
+    </div>
+    <div class = "flex-container1">
+        <div class = "flex-item">
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/University_of_the_Philippines_at_Los_Banos-Gate.jpg/2560px-University_of_the_Philippines_at_Los_Banos-Gate.jpg"/>
+            
+        </div>
+    </div>
+    <div class = "flex-container2">
+        <div class = "flex-item1" style = "flex:3;">
+            Going UP (Arcade Platform Game)
+        </div>
+        <div class = "flex-item2" style = "flex:3;">
+            Inventory System
+        </div>
+        <div class = "flex-item2" style = "flex:3;">
+            Diet Selector with Quadratic Interpolation
+        </div>
+        <div class = "flex-item2" style = "flex:3;">
+            project
+        </div>
+    </div>
+    <div class = "flex-container3">
+        <div class = "flex-item3" style = "flex:3;">
+            skills
+        </div>
+        <div class = "flex-item3" style = "flex:3;">
+            autobiography
+        </div>
+    </div>
+
+<footer>
+    <div footer = "footer-section" style = "flex:1;">
+        img
+    </div>
+    <div footer="footer-section" style = "flex:3;">
+        <p>University of the Philippines Los Banos</p>
+        Copyright Information
+    </div>
+    
+</footer>
+</body>
+
+</html>
