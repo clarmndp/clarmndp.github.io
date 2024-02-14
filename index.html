@@ -2,28 +2,39 @@
 
 <html>
     <head>
-        <title>Personal Portfolio</title>
-        <style>
+        <title>Clarence Mandap</title>
 
+        <style>
             body{
                 color: white;
                 background-color: black;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
 
-            .flex-container0 {
+            .flex-container-header {
                 display: flex;
-                border-style: solid;
-                border-width: 5px;
-                border-color: #393e46;
-                flex-direction: column;
-                align-self: center;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row; /* Align items horizontally */         
             }
-    
-            .flex-item0 {
-                border-style: solid;
-                border-width: 2px;
-                border-color: #393e46;
+            
+            .flex-item.fName {
+                font-size: 75px;
+                text-align: center;
             }
+
+            .flex-item.lName {
+                font-size: 75px;
+                text-align: center;
+            }
+
+            .flex-item-logo {
+                justify-content: center;
+                align-items: center;
+                max-width:  100%;
+                max-height:  100%;
+                object-fit: cover;
+}
             
             .flex-container1 {
                 display: flex;
@@ -32,7 +43,7 @@
                 border-color: #393e46;
                 align-self: center;
             }
-    
+            
             .flex-item img {
                 max-width:  100%;
                 max-height:  100%;
@@ -73,18 +84,18 @@
             }
 
             
-        footer {
-            display: flex;
-            justify-content: space-between;
-            padding: 2em;
-            background-color: #333;
-            color: #fff;
-            position: absolute; 
-            bottom: 0; 
-            left: 0;
-            right: 0;
-            z-index: 10;
-        }
+            footer {
+                display: flex;
+                justify-content: space-between;
+                padding: 2em;
+                background-color: #333;
+                color: #fff;
+                position: absolute; 
+                bottom: 0; 
+                left: 0;
+                right: 0;
+                z-index: 10;
+            }
 
         .footer-section {
         display: flex;
@@ -95,15 +106,26 @@
         </style>
     </head>
 
-<body>
-    <div class = "flex-container0">
-        <img src = "clarmndp.github.io\DSC05256.JPG"/>
+<body>  
+
+    <div class = "flex-container-header">
+        <div class = "flex-item fName">
+            Clarence
+        </div>
+        <div class = "flex-item-logo">
+            <img src = "https://github.com/clarmndp/clarmndp.github.io/blob/main/DSC05256.JPG?raw=true"/>
+        </div>
+        <div class = "flex-item lName">
+            Mandap
+        </div>
     </div>
+
     <div class = "flex-container1">
         <div class = "flex-item img">
             <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/University_of_the_Philippines_at_Los_Banos-Gate.jpg/2560px-University_of_the_Philippines_at_Los_Banos-Gate.jpg"/>
         </div>
     </div>
+
     <div class = "flex-container2">
         <div class = "flex-item1" style = "flex:3;">
             Going UP (Arcade Platform Game)
@@ -118,6 +140,7 @@
             project
         </div>
     </div>
+
     <div class = "flex-container3">
         <div class = "flex-item3" style = "flex:3;">
             skills
@@ -127,16 +150,16 @@
         </div>
     </div>
 
-<footer>
-    <div footer = "footer-section" style = "flex:1;">
-        img
-    </div>
-    <div footer="footer-section" style = "flex:3;">
-        <p>University of the Philippines Los Banos</p>
-        Copyright Information
-    </div>
-    
-</footer>
+    <footer>
+        <div footer = "footer-section" style = "flex:1;">
+            img
+        </div>
+        <div footer="footer-section" style = "flex:3;">
+            <p>University of the Philippines Los Banos</p>
+            Copyright Information
+        </div>
+    </footer>
+
 </body>
 
 </html>
